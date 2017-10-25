@@ -1,0 +1,28 @@
+section {
+    width: 100%;
+    float: left;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 1.125em;
+    }
+    section {
+        width: 25%;
+        float: left;
+    }
+}
+@media (min-width: 1000px) {
+    html {
+        font-size: 1.25em;
+    }
+    section {
+        width: 12.5%;
+        float: left;
+    }
+}
