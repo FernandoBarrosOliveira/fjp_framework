@@ -1,28 +1,69 @@
 section {
     width: 100%;
-    float: left;
+    float: left;  
+    padding: 1% 1%;
 }
 
+* {
+    box-sizing: border-box;
+}
 body{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
+    padding: 0 1%;
 }
 
-@media (min-width: 600px) {
+img, iframe{
+    height: auto;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.5em; 
+}
+h2 {
+    font-size: 2em; 
+}
+h3 {
+    font-size: 1.5em; 
+}
+h4 {
+    font-size: 1.25em; 
+}
+h5 {
+    font-size: 1em; 
+}
+h6 {
+    font-size: 0.75em; 
+}
+
+
+@media (min-width: 500px) {
     html {
         font-size: 1.125em;
     }
-    section {
+    section.grid {
         width: 25%;
         float: left;
     }
+
+    
 }
-@media (min-width: 1000px) {
+@media (min-width: 960px) {
     html {
         font-size: 1.25em;
     }
-    section {
+    section.grid {
         width: 12.5%;
         float: left;
     }
+
+    section.media{
+        height: auto;
+        width: 50%;
+        float: left;
+    }
+
+
+
 }
