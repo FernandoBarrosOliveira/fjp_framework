@@ -245,62 +245,62 @@
     text-align: justify;
 }
 .fnt-arial-b-l {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: left;
 }
 .fnt-arial-b-r {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: right;
 }
 .fnt-arial-b-c {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
 }
 .fnt-arial-b-j {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: justify;
 }
 .fnt-arial-i-l {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     text-align: left;
 }
 .fnt-arial-i-r {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     text-align: right;
 }
 .fnt-arial-i-c {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     text-align: center;
 }
 .fnt-arial-i-j {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     text-align: justify;
 }
 .fnt-arial-n-l {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     text-align: left;
 }
 .fnt-arial-n-r {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     text-align: right;
 }
 .fnt-arial-n-c {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     text-align: center;
 }
 .fnt-arial-n-j {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     text-align: justify;
 }
@@ -423,7 +423,7 @@ nav {
     margin-left: -30px;
 }
 
-footer{
+footer {
     
     float: left; 
     text-align: center;
@@ -431,19 +431,18 @@ footer{
     width: 100%;
 }
 
-@media (max-width: 960px) {
-    
-
+button {
+    background: url(burguer.png) no-repeat #444444;
+    height: 42px;
+    border-radius: 8px;
+    color: #f0f0f0;
+    text-align: right;
+    font-size: bold;
+    font-size: 1.125em;
+    width: 140px;
+    border: none; 
+    margin: 15px 2px 2px 8px;
 }
-
-@media (max-width: 480px) {
-    
-    nav ul li {        
-        
-    }   
-    
-}
-
 
 @media (min-width: 500px) {
     html {
@@ -456,9 +455,7 @@ footer{
 
     nav ul li {        
         width: 49.50%;
-    }   
-    
-    
+    }      
 }
 
 @media (min-width: 960px) {
