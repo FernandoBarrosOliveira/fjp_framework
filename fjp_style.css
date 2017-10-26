@@ -411,8 +411,7 @@ nav ul li {
     margin: 0;
     text-align: center;
     display: inline-block; 
-    width: 24.5%; 
-    min-width: 200px;     
+    max-width: 97.50%;
 }
 
 a { 
@@ -434,16 +433,13 @@ footer{
 
 @media (max-width: 960px) {
     
-    nav ul li {        
-        width: 49.50%;
-    }   
-    
+
 }
 
 @media (max-width: 480px) {
     
     nav ul li {        
-        width: 97.50%;
+        
     }   
     
 }
@@ -457,6 +453,11 @@ footer{
         width: 24.5%;
         float: left;
     }  
+
+    nav ul li {        
+        width: 49.50%;
+    }   
+    width: 24.5%; 
     
 }
 
@@ -475,4 +476,55 @@ footer{
         float: left;
     }
 
+    nav ul li {        
+        width: 24.5%; 
+    }   
+    
+
+}
+
+
+@media (max-width: 500px) {
+  .navegacao {
+      background: #f0f0f0;
+      padding: 1em;
+      margin: 0;
+
+      height: 100%;
+      width: 90%;
+      max-width: 320px;
+
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: -90%;
+
+      transition: left 0.3s ease-out;
+  }
+  .menu-ativo .navegacao {
+      left: 0;
+  }
+  .menu-principal li {
+      padding: 1em 0;
+      width: 100%;
+  }
+  .menu-ativo:after {
+        content: "";
+        display: block;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        background: rgba(0,0,0,0.4);
+    }
+}
+
+@media not all and (max-width: 500px) {
+    .menu-abrir,
+    .menu-fechar {
+        display: none;
+    }
 }
