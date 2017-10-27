@@ -369,9 +369,15 @@
 
 section {
     width: 100%;
-    float: left;  
+   
     padding: 1%;
     margin: 0.25%;
+    
+}
+
+section.media{
+    height: auto;
+    width: 100%;    
 }
 
 * {
@@ -379,7 +385,7 @@ section {
 }
 body{
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 960px;
     padding: 0 1%;
 }
 
@@ -419,18 +425,17 @@ a {
     text-decoration: none;  
 }
 nav {    
-    max-width: 1080px;
-    margin-left: -30px;
+    max-width: 100%;
+    margin-left: 0;
 }
 
-footer {
-    
+footer {   
     float: left; 
     text-align: center;
     max-width: 1080px;
     width: 100%;
 }
-
+/*
 button {
     background: url(burguer.png) no-repeat #444444;
     height: 42px;
@@ -443,6 +448,43 @@ button {
     border: none; 
     margin: 15px 2px 2px 8px;
 }
+*/
+
+.menu-abrir,
+.menu-fechar {
+    background: none;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    font-size: 1.6em;
+    text-indent: -999em;
+}
+
+.menu-abrir {
+    height: 0;
+    width:.75em;
+    padding-top:.125em;
+    border-top: .375em double #000;
+    border-bottom: .125em solid #000;
+
+    vertical-align: middle;
+    margin: 0.5em;
+}
+
+.menu-fechar {
+    position: relative;
+    height: 1em;
+    width: 1em;
+}
+
+.menu-fechar:before {
+    content: '\00D7';
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: 0;
+}
+
 
 @media (min-width: 500px) {
     html {
@@ -454,8 +496,12 @@ button {
     }  
 
     nav ul li {        
-        width: 49.50%;
+        width: 49.50%;        
     }      
+    section.media{
+        height: auto;
+        float: left;
+    }    
 }
 
 @media (min-width: 960px) {
@@ -469,14 +515,13 @@ button {
 
     section.media{
         height: auto;
-        width: 49.50%;
+        width: 49.5%;
         float: left;
     }
 
     nav ul li {        
         width: 24.5%; 
-    }   
-    
+    }       
 
 }
 
